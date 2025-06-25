@@ -38,7 +38,15 @@ git clone https://github.com/your-username/student-management-node-mysql.git
 cd student-management-node-mysql
 
 2. Install Dependencies
-npm install
+| Purpose                        | Package             | Why it’s needed                                                          |
+| ------------------------------ | ------------------- | ------------------------------------------------------------------------ |
+| Web-server framework           | **express**         | handles routing, middleware, listening on port 8080                      |
+| Templating engine              | **ejs**             | lets you render dynamic HTML from `.ejs` files                           |
+| Layout/partials helper for EJS | **ejs-mate**        | adds layout / `block` support; see `app.engine("ejs", ejsmate)` in code  |
+| SQL driver                     | **mysql2**          | connects Node.js to your MySQL database                                  |
+| HTTP method spoofing           | **method-override** | lets HTML forms simulate `PATCH` and `DELETE` requests                   |
+| ID generator                   | **uuid**            | creates secure, unique student IDs (`uuidv4()`)                          |
+
 
 3. Create MySQL Database
 Open MySQL terminal or use a GUI (e.g., phpMyAdmin, MySQL Workbench).
