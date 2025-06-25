@@ -1,0 +1,19 @@
+<% layout("/layouts/boilerplat")%>
+
+    <body class="d-flex">
+        <div class="main-content container-fluid">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1 class="h3">Student Details</h1>
+                <form action="/student/search?_method=PATCH" method="post" class="d-flex">
+                    <input type="text" name="name" class="form-control me-2" placeholder="Search Name">
+                    <button type="submit" class="btn btn-success">Search</button>
+                </form>
+            </div>
+
+            <div class="NoData">
+                <h1>No Data Found</h1>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
